@@ -1,0 +1,45 @@
+Script started on 2024-08-22 00:59:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="127" LINES="11"]
+[0;32m@shahriar-nehal [0m➜ [1;34m/workspaces/adsd [0;36m([1;31mmain[0;36m) [0m$ sqlite3
+SQLite version 3.45.3 2024-04-15 13:34:05
+Enter ".help" for usage hints.
+Connected to a [1mtransient in-memory database[0m.
+Use ".open FILENAME" to reopen on a persistent database.
+[?2004hsqlite> exit
+[?2004l[?2004h   ...> /[K.exit
+[?2004l[?2004h   ...> ^Z[?2004l
+[1]+  Stopped                 sqlite3
+[0;32m@shahriar-nehal [1;31m➜ [1;34m/workspaces/adsd [0;36m([1;31mmain[0;36m) [0m$ sqlite
+bash: sqlite: command not found
+[0;32m@shahriar-nehal [1;31m➜ [1;34m/workspaces/adsd [0;36m([1;31mmain[0;36m) [0m$ sqlite3
+SQLite version 3.45.3 2024-04-15 13:34:05
+Enter ".help" for usage hints.
+Connected to a [1mtransient in-memory database[0m.
+Use ".open FILENAME" to reopen on a persistent database.
+[?2004hsqlite> sqlite3 pets.db[C[C[C[C[C[C[C[C^Z[?2004l
+[2]+  Stopped                 sqlite3
+[0;32m@shahriar-nehal [1;31m➜ [1;34m/workspaces/adsd [0;36m([1;31mmain[0;36m) [0m$ sqlite3 pets.db
+SQLite version 3.45.3 2024-04-15 13:34:05
+Enter ".help" for usage hints.
+[?2004hsqlite> .tables
+[?2004l[?2004hsqlite> create table([K pets[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KCRWATW[K[K[K[KEATE TSB[K[KABLE pets(
+[?2004l[?2004h(x1...> id Integer p[K[K[K[K[K[K[K[K[KINTEGER PRIME[KARY KEY AUTOINCREMENT,
+[?2004l[?2004h(x1...> NM[KANE[K[KME[K[K[K[Knm[Kame TEXT NOTNULL[K[K[K[K NULL,
+[?2004l[?2004h(x1...> type TEXT NOT NULL,
+[?2004l[?2004h(x1...> age INTEGER,
+[?2004l[?2004h(x1...> owner TEXT);
+[?2004l[?2004hsqlite> .TABLES[K[K[K[K[K[K[K.tables
+[?2004lpets
+[?2004hsqlite> sec[Klect * from ets[K[K[Kpets
+[?2004l[?2004h   ...> select * from pets;
+[?2004lParse error: near "select": syntax error
+  select * from pets select * from pets;
+                     ^--- error here
+[?2004hsqlite> select * from pets;
+[?2004l[?2004hsqlite> insert [K[K[K[K[K[K[KINSERT INTO pets (name, type, age, a[Kp[Kowner) VALUES ()[C;');');A');B');C');D');[C,);');');D');o');g');[C,);9);,);');');N');e');h');a');l');[C
+[?2004l[?2004hsqlite> INSERT INTO pets (name, type, age, owner) VALUES ('ABCD','Dog',9,'Nehal');[C[C[C[C[C[C[C[Cselect * from pets;[K
+[?2004l1|ABCD|Dog|9|Nehal
+[?2004hsqlite> select * from pets;[C[C[C[C[C[C[C[CINSERT INTO pets (name, type, age, owner) VALUES ('ABCD','Dog',9,'Nehal');[1P','Dog',9,'Nehal');[1P','Dog',9,'Nehal');[1P','Dog',9,'Nehal');[1P','Dog',9,'Nehal');l','Dog',9,'Nehal');i','Dog',9,'Nehal');a','Dog',9,'Nehal');m','Dog',9,'Nehal');0liam','Dog',9,'Nehal');\liam','Dog',9,'Nehal');[1Pliam','Dog',9,'Nehal');[1Pliam','Dog',9,'Nehal');[C\iam','Dog',9,'Nehal');[1Piam','Dog',9,'Nehal');[1Piam','Dog',9,'Nehal');Liam','Dog',9,'Nehal');[C[C[C[C[C[C[C[C[C[1P',9,'Nehal');[1P',9,'Nehal');[1P',9,'Nehal');C',9,'Nehal');a',9,'Nehal');t',9,'Nehal');[C[C[C[1P,'Nehal');6,'Nehal');[1P,'Nehal');8,'Nehal');[C[C[C[C[C[C[C[1P');[1P');[1P');[1P');[1P');C');h');r');i');s');
+[?2004l[?2004hsqlite> INSERT INTO pets (name, type, age, owner) VALUES ('Liam','Cat',8,'Chris');[C[C[C[C[C[C[C[Cselect * from pets;[K
+[?2004l1|ABCD|Dog|9|Nehal
+2|Liam|Cat|8|Chris
+[?2004hsqlite> mode 
